@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.nikvay.doctorapplication">
+    package="com.nikvay.patientapplication">
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -24,30 +24,30 @@
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
         <activity
-            android:name=".view.activity.AppointmentListActivity"
+            android:name="com.nikvay.patientapplication.view.activity.AppointmentListActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".view.activity.NewClassActivity"
+            android:name="com.nikvay.patientapplication.view.activity.NewClassActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".view.activity.ClassActivity"
+            android:name="com.nikvay.patientapplication.view.activity.ClassActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".view.activity.ServiceDetailsActivity"
+            android:name="com.nikvay.patientapplication.view.activity.ServiceDetailsActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".view.activity.ServiceListActivity"
+            android:name="com.nikvay.patientapplication.view.activity.ServiceListActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".view.activity.PatientDetailsActivity"
+            android:name="com.nikvay.patientapplication.view.activity.PatientDetailsActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".view.activity.NewPatientActivity"
+            android:name="com.nikvay.patientapplication.view.activity.NewPatientActivity"
             android:screenOrientation="portrait" />
 
 
         <service
-            android:name=".firebaseservice.MyFirebaseMessagingService"
+            android:name="com.nikvay.patientapplication.firebaseservice.MyFirebaseMessagingService"
             tools:ignore="ExportedService">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
@@ -55,10 +55,10 @@
         </service>
 
         <activity
-            android:name=".view.activity.LoginActivity"
+            android:name="com.nikvay.patientapplication.view.activity.LoginActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".view.activity.SplashActivity"
+            android:name="com.nikvay.patientapplication.view.activity.SplashActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -67,7 +67,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name="com.nikvay.patientapplication.MainActivity"
             android:screenOrientation="portrait" />
 
         <meta-data
